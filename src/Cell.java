@@ -15,7 +15,7 @@ public class Cell {
         this.initialGems = initialGems;
     }
     Cell(){
-//        this.maxPath = new Path(-1,-1);
+        ArrayList<Integer> bestPath = new ArrayList<>(Arrays.asList(-1,-1));
         totalGems = 0;
         initialGems = 0;
     }

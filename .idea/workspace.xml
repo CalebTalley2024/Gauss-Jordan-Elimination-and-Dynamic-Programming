@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="677e164c-39c8-4dce-a516-a02573ba54c3" name="Changes" comment="most of the code for the Dynamic programming problem is finished, but there is something wrong  with the paths I am picking">
+    <list default="true" id="677e164c-39c8-4dce-a516-a02573ba54c3" name="Changes" comment="The room table is now correct. &#10;&#10;Errors: path parameter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +69,7 @@
       <updated>1669670145648</updated>
       <workItem from="1669670147633" duration="29730000" />
       <workItem from="1670100678220" duration="5917000" />
-      <workItem from="1670108463646" duration="2037000" />
+      <workItem from="1670108463646" duration="7723000" />
     </task>
     <task id="LOCAL-00001" summary="most of the code for the Dynamic programming problem is finished, but there is something wrong  with the paths I am picking">
       <created>1670107095057</created>
@@ -76,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670107095057</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The room table is now correct. &#10;&#10;Errors: path parameter">
+      <created>1670113472425</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670113472425</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,17 +104,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="most of the code for the Dynamic programming problem is finished, but there is something wrong  with the paths I am picking" />
-    <option name="LAST_COMMIT_MESSAGE" value="most of the code for the Dynamic programming problem is finished, but there is something wrong  with the paths I am picking" />
+    <MESSAGE value="The room table is now correct. &#10;&#10;Errors: path parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="The room table is now correct. &#10;&#10;Errors: path parameter" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Room.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Cell" memberName="bestPath" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
