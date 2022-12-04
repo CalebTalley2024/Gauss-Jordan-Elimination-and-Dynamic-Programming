@@ -54,9 +54,10 @@ public static ArrayList<ArrayList<Cell>> makeRoom(int[][] array){
       // make new arrayList
       // size of both dimensions is the same, so just pick one for the array length
       int roomSize = room.get(0).size();
-      // iterate thorough the rows
-    for(int i = 1;i<roomSize;i++){
-        ArrayList<Cell> aRow = room.get(i);
+       int maxIndex = roomSize-1;
+      // iterate thorough the rows (start on the second row from the bottom)
+    for(int i = maxIndex-1;i>=0;i--){
+        ArrayList<Cell> aRow = room.get(i); /// why does this dynamically change rows!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         // iterate thorugh each column
         for(int j = 0;j<roomSize;j++){
             Cell aCell = aRow.get(j);
@@ -69,17 +70,17 @@ public static ArrayList<ArrayList<Cell>> makeRoom(int[][] array){
 
             // check if the index is valid (index not too big or too small)
             if((j-1)>=0) {
-                Cell leftCell = room.get(i - 1).get(j - 1);
+                Cell leftCell = room.get(i + 1).get(j - 1);
                 // add sum from beginning to the initial of the end
                 left = getPathVal(leftCell.totalGems, aCell.initialGems, j - 1);
             }
 
             // we dont need to check the middle cell, since this will always be valid
-            Cell middleCell = room.get(i).get(j);
+            Cell middleCell = room.get(i+1).get(j);
             middle = getPathVal(middleCell.totalGems, aCell.initialGems, j);
 
             if((j)<roomSize - 1) {
-                Cell rightCell = room.get(i - 1).get(j + 1);
+                Cell rightCell = room.get(i + 1).get(j + 1);
                right = getPathVal(rightCell.totalGems, aCell.initialGems, j + 1);;
             }
             // compare the indices to find the largest sum (invalid indices will have sum of -1)
@@ -90,7 +91,7 @@ public static ArrayList<ArrayList<Cell>> makeRoom(int[][] array){
             ArrayList<Integer> bestPath = new ArrayList<>();
             // to make your path, just append to the previous cell's path
             if(bestPathVal == left) {
-                Cell leftCell = room.get(i - 1).get(j - 1);
+                Cell leftCell = room.get(i + 1).get(j - 1);
                 bestPath = leftCell.bestPath;
                 bestPath.add(j);
             }
@@ -99,7 +100,7 @@ public static ArrayList<ArrayList<Cell>> makeRoom(int[][] array){
                 bestPath.add(j);
             }
             else if(bestPathVal == right){
-                Cell rightCell = room.get(i - 1).get(j + 1);
+                Cell rightCell = room.get(i + 1).get(j + 1);
                 bestPath = rightCell.bestPath;
                 bestPath.add(j);
             }
@@ -109,6 +110,7 @@ public static ArrayList<ArrayList<Cell>> makeRoom(int[][] array){
             aCell.bestPath = bestPath;
             //
         }
+//        printRow(aRow,1);
     }
     printRoom(room);
     return room;
