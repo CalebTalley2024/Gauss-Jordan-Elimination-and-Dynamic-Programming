@@ -10,10 +10,10 @@ public class Main {
 //        Matrix.ForwardElimination(A1);
 // Q2 test
         float[][] A2 = Matrix.A2;
-        Matrix.print2DArray(A1);
+        Matrix.print2DArray(A2);
         System.out.println();
         System.out.println();
-//        Matrix.BetterForwardElimination(A1);
+        Matrix.BetterForwardElimination(A2);
         // Q3 test
 //        Matrix.GaussJordenElimination(A1);
 
