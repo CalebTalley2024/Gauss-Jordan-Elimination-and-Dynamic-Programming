@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="677e164c-39c8-4dce-a516-a02573ba54c3" name="Changes" comment="Done: Q1,2,3,4&#10;&#10;Next: Formatting and Proofreading">
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img_1.png" afterDir="false" />
+    <list default="true" id="677e164c-39c8-4dce-a516-a02573ba54c3" name="Changes" comment="Done: Q1,2,3,4&#10;&#10;Next: Formatting and Proofreading for Q4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Room.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <workItem from="1669670147633" duration="29730000" />
       <workItem from="1670100678220" duration="5917000" />
       <workItem from="1670108463646" duration="23180000" />
-      <workItem from="1670280284619" duration="9557000" />
+      <workItem from="1670280284619" duration="10449000" />
     </task>
     <task id="LOCAL-00001" summary="most of the code for the Dynamic programming problem is finished, but there is something wrong  with the paths I am picking">
       <created>1670107095057</created>
@@ -116,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670288703440</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Done: Q1,2,3,4&#10;&#10;Next: Formatting and Proofreading for Q4">
+      <created>1670290934219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670290934219</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +144,8 @@
     <MESSAGE value="Question 4 is done, just make sure to double check the results and room tomorrow&#10;&#10;Next: Questions 1,2,3 (these should take less time to code)" />
     <MESSAGE value="Done: Q1,2,4&#10;&#10;Next: Questions 3 &#10;- I was able to make A1 an identity matrix by using BetterForwardElimination and making j iterate through every row that is not the ith row. this way. I was able to 0 all elements in a column except for those part of the diagonal. I also made i go through the last row ( as opposed to second last), since there is no need to make j i+1 when iterating through columns&#10;&#10;Next: fix BetterForwardElimination and incorporate the fix into GuassJordanElimination" />
     <MESSAGE value="Done: Q1,2,3,4&#10;&#10;Next: Formatting and Proofreading" />
-    <option name="LAST_COMMIT_MESSAGE" value="Done: Q1,2,3,4&#10;&#10;Next: Formatting and Proofreading" />
+    <MESSAGE value="Done: Q1,2,3,4&#10;&#10;Next: Formatting and Proofreading for Q4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done: Q1,2,3,4&#10;&#10;Next: Formatting and Proofreading for Q4" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

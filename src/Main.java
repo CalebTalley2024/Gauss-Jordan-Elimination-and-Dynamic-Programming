@@ -16,11 +16,10 @@ public class Main {
         float[][] A3 = Matrix.A3;
         Matrix.GaussJordenElimination(A3);
 
-        System.out.println("----------------------------------------");
+        System.out.println("---------------------------------------------------------");
 // Question 4
-        System.out.println("Question4");
-        System.out.println();
-//        Room.question4(Room.assignmentArray);
+        System.out.println("Question 4");
+        Room.question4(Room.assignmentArray);
 
     }
 

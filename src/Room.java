@@ -39,7 +39,7 @@ public class Room {
     public static void question4(int[][] twoDArray){
         ArrayList<ArrayList<Cell>> room =  Room.makeRoom(twoDArray);
         ArrayList<ArrayList<Cell>> sortedRoom = Room.findBestPaths(room);
-//      printRoom(sortedRoom); // TA: if you want to see what the room looks like, use this
+//        printRoom(sortedRoom); // TA: if you want to see what the room looks like, use this
         Room.roomOutput(sortedRoom);
     }
     // print2DArrayprints int[][]
@@ -147,9 +147,9 @@ public class Room {
         int pathMaxIndex = bestPath.size()-1;
         int endSquare = cellMax.bestPath.get(pathMaxIndex);
 
-        System.out.println("(a) Bilbo's starting square: Row 8, Vault " + (startSquare + 1));
+        System.out.println("(a) Bilbo's starting square: Row 1, Vault " + (startSquare + 1));
 
-        System.out.print("(b) a representation of his path:");
+        System.out.print("(b) a representation of his path (going from row 1 to row 8 with each vault): ");
         printPath(bestPath);
 
         System.out.println("(c) the total number of gems collected on the way: "+numGems );
@@ -206,6 +206,7 @@ public class Room {
     // printing a path
     public static void printPath(ArrayList<Integer> path){
         String pathWritten = "";
+        int i = 1;
         path.forEach((vNum)-> System.out.print("Vault " + (vNum + 1) + ", "));
 //        path.forEach((vNum)-> System.out.print( vNum + " , " ));
         System.out.println();
