@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 // Q1 test
+        float[][] test = Matrix.test;
         float[][] A1 =Matrix.A1;
 //        Matrix.print2DArray(A1);
         System.out.println();
@@ -13,10 +14,15 @@ public class Main {
         Matrix.print2DArray(A2);
         System.out.println();
         System.out.println();
-        Matrix.BetterForwardElimination(A2);
+//        Matrix.BetterBetterForwardElimination(A2);
         // Q3 test
-//        Matrix.GaussJordenElimination(A1);
+        float[][] A3 = Matrix.A3;
+        Matrix.GaussJordenElimination(A3);
 
+        System.out.println();
+        float s = 3.5f;
+        int a = Math.round(s);
+        System.out.println(a);
 
 // Question 4
 //        Room.question4(Room.assignmentArray);

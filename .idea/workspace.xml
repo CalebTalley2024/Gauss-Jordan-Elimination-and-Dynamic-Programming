@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="677e164c-39c8-4dce-a516-a02573ba54c3" name="Changes" comment="Done: Q1,2,4&#10;&#10;Next: Questions 3 &#10;- I was able to make A1 an identity matrix by using BetterForwardElimination and making j iterate through every row that is not the ith row. this way. I was able to 0 all elements in a column except for those part of the diagonal. I also made i go through the last row ( as opposed to second last), since there is no need to make j i+1 when iterating through columns&#10;&#10;Next: fix BetterForwardElimination and incorporate the fix into GuassJordanElimination">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Matrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +70,7 @@
       <workItem from="1669670147633" duration="29730000" />
       <workItem from="1670100678220" duration="5917000" />
       <workItem from="1670108463646" duration="23180000" />
-      <workItem from="1670280284619" duration="3151000" />
+      <workItem from="1670280284619" duration="7586000" />
     </task>
     <task id="LOCAL-00001" summary="most of the code for the Dynamic programming problem is finished, but there is something wrong  with the paths I am picking">
       <created>1670107095057</created>
@@ -98,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670283144895</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Done: Q1,2,4&#10;&#10;Next: Questions 3 &#10;- I was able to make A1 an identity matrix by using BetterForwardElimination and making j iterate through every row that is not the ith row. this way. I was able to 0 all elements in a column except for those part of the diagonal. I also made i go through the last row ( as opposed to second last), since there is no need to make j i+1 when iterating through columns&#10;&#10;Next: fix BetterForwardElimination and incorporate the fix into GuassJordanElimination">
+      <created>1670284380150</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670284380150</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
